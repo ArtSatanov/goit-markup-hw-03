@@ -6,6 +6,7 @@
   --dark-color: #2e2f42; /* Overlays Shadows Headings logo*/
   --light-bg-color: #f4f4fd; /* Light mode backgrounds Light mode Dialogs/alerts */
   --acccent-color: #e7e9fc; /* Accent color Hairlines Subtle backgrounds */
+  --cont-width: 1158px;
 }
 
 body {
@@ -32,12 +33,17 @@ ul {
   margin: 0;
 }
 
+.section {
+  padding: 120px 0 ;
+  outline: 5px solid green;
+}
 .container {
   width: 1158px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  
+  
 }
 
 .current.link {
@@ -171,6 +177,7 @@ ul {
 /* Hero section - Studio*/
 
 .hero {
+  text-align: center;
   background-color: var(--dark-color);
 }
 
@@ -185,6 +192,8 @@ ul {
 }
 
 .hero-btn {
+  padding: 16px 32px;
+  border-radius: 4px;
   color: var(--bg-color);
   background-color: var(--primary-brand-color);
 }
@@ -198,15 +207,26 @@ ul {
 }
 
 .features-list {
+  display: flex;
+  
+  gap: 24px;
+  
+
 }
 
 .features-item {
+  flex-basis: calc((1128px - 72px)/4);
 }
 
 .features-subtitle {
+  text-align: left;
+  margin-bottom: 8px;
+  
+  
 }
 
 .features-desc {
+
 }
 
 /* Examples - Studio*/
