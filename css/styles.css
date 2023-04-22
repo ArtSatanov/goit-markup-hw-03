@@ -183,13 +183,17 @@ img {
 .hero {
   text-align: center;
   background-color: var(--dark-color);
+  padding: 188px 0;
 }
 
 .hero-title {
+  width: 496px;
+  margin: 0 auto 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  
   letter-spacing: 0.02em;
 
   color: var(--bg-color);
