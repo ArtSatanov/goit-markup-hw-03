@@ -33,6 +33,10 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .section {
   padding: 120px 0 ;
   outline: 5px solid green;
@@ -232,12 +236,17 @@ ul {
 /* Examples - Studio*/
 
 .examples {
+  padding-top: 0;
 }
 
 .examples-title {
+  margin-bottom: 72px;
+
 }
 
 .examples-list {
+  display: flex;
+  gap: 24px;
 }
 
 .examples-item {
@@ -253,27 +262,36 @@ ul {
 }
 
 .team-title {
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
+  
   background-color: var(--bg-color);
 }
 
 .team-img {
+  margin-bottom: 32px;
 }
 
 .team-subtitle {
+  margin-bottom: 8px;
 }
 
 .team-desc {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* Footer */
 
 .footer {
+  padding: 100px 0;
   background-color: var(--dark-color);
 }
 
@@ -281,6 +299,8 @@ ul {
 }
 
 .footer-desc {
+  margin-top: 16px;
+  width: 264px;
   color: var(--light-bg-color);
 }
 
