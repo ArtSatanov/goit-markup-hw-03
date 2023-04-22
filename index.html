@@ -5,64 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <!-- navigation -->
-      <nav class="header-nav">
-        <a href="./index.html" class="header-nav-logo link logo active-link"
-          >Web<span class="logo-lead">Studio</span></a
-        >
-
-        <ul class="header-nav-list list">
-          <li class="header-nav-item current">
-            <a
-              href="./index.html"
-              class="header-nav-link link primary-text active-link"
-              >Studio</a
-            >
-          </li>
-          <li class="header-nav-item">
-            <a
-              href="./portfolio.html"
-              class="header-nav-link link primary-text active-link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link link primary-text active-link"
-              >Contacts</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- address -->
-      <address class="header-address">
-        <ul class="header-cont-list list">
-          <li class="header-cont-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-cont-link link primary-text active-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-cont-item">
-            <a
-              href="tel:+110001111111"
-              class="header-cont-link link primary-text active-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container-header container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-nav-logo link logo active-link"
+            >Web<span class="logo-lead">Studio</span></a
+          >
+          <ul class="header-nav-list list">
+            <li class="header-nav-item current">
+              <a
+                href="./index.html"
+                class="header-nav-link link primary-text active-link"
+                >Studio</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a
+                href="./portfolio.html"
+                class="header-nav-link link primary-text active-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-link link primary-text active-link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- address -->
+        <address class="header-address">
+          <ul class="header-cont-list list">
+            <li class="header-cont-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-cont-link link primary-text active-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-cont-item">
+              <a
+                href="tel:+110001111111"
+                class="header-cont-link link primary-text active-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- hero -->
