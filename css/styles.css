@@ -36,6 +36,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .section {
@@ -217,14 +218,18 @@ img {
 
 .features-list {
   display: flex;
-  
-  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: calc( -1 * var(--gap-team-card));
+  margin-left: calc( -1 * var(--gap-team-card));
   
 
 }
 
 .features-item {
-  flex-basis: calc((1128px - 72px)/4);
+  flex-basis: calc(100% / 4 - var(--gap-team-card));
+  margin-top: var(--gap-team-card);
+  margin-left: var(--gap-team-card);
+
 }
 
 .features-subtitle {
@@ -251,10 +256,15 @@ img {
 
 .examples-list {
   display: flex;
-  gap: 24px;
-}
+  flex-wrap: wrap;
+  margin-left: calc( -1 * var(--gap-team-card));
+  margin-top: calc( -1 * var(--gap-team-card));
+  }
 
 .examples-item {
+  flex-basis: calc(100% / 3 - var (--gap-team-card));
+  margin-left: var(--gap-team-card);
+  margin-top: var(--gap-team-card);
 }
 
 .examples-img {
