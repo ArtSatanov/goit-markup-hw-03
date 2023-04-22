@@ -353,13 +353,13 @@ img {
   flex-basis: calc(100% / 3 - var(--gap-team-card));
   margin-top: var(--gap-team-card);
   margin-left: var(--gap-team-card);
-  border: 1px solid var(--border-color-card-portfolio);
 }
 
 .portfolio-card {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--border-color-card-portfolio);
 }
 
 .portfolio-link {
