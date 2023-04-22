@@ -41,7 +41,6 @@ img {
 
 .section {
   padding: 120px 0 ;
-  outline: 5px solid green;
 }
 .container {
   width: 1158px;
@@ -335,12 +334,20 @@ img {
 }
 
 .portfolio-btn-items {
+  display: flex;
+  gap: var(--gap-team-card);
+  margin: 96px 0 72px;
+  justify-content: center;
+  
 }
 
 .btn-item {
+  
 }
 
 .portfolio-btn {
+  padding: 12px 24px;
+
   color: var(--primary-brand-color);
   background-color: var(--light-bg-color);
   border: 1px solid var(--acccent-color);
