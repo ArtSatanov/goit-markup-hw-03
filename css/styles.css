@@ -8,6 +8,7 @@
   --acccent-color: #e7e9fc; /* Accent color Hairlines Subtle backgrounds */
   --cont-width: 1158px;
   --gap-team-card: 24px;
+  --border-color-card-portfolio:#E7E9FC;
 }
 
 body {
@@ -331,12 +332,13 @@ img {
 /* main - portfolio */
 
 .portfolio {
+  padding-top: 96px;
 }
 
 .portfolio-btn-items {
   display: flex;
   gap: var(--gap-team-card);
-  margin: 96px 0 72px;
+  margin-bottom: 72px;
   justify-content: center;
   
 }
@@ -355,9 +357,25 @@ img {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc( -1 * var(--gap-team-card));
+  margin-left: calc( -1 * var(--gap-team-card));
 }
 
 .portfolio-item {
+  flex-basis: calc(100% / 3 - var(--gap-team-card));
+  margin-top: var(--gap-team-card);
+  margin-left: var(--gap-team-card);
+  border: 1px solid var(--border-color-card-portfolio);
+
+}
+
+.portfolio-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  
 }
 
 .portfolio-link {
@@ -367,7 +385,10 @@ img {
 }
 
 .portfolio-subtitle {
+  text-align: left;
+  
 }
 
 .portfolio-desc {
+text-align: left;
 }
