@@ -10,23 +10,27 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+
   color: var(--main-text-color);
   background-color: var(--bg-color);
-  letter-spacing: 0.02em;
+  
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
+  margin: 0;
+}
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .current.link {
@@ -48,6 +52,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--primary-brand-color);
 }
 
@@ -75,6 +80,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
   color: var(--dark-color);
 }
 
@@ -84,18 +90,21 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+
   color: var(--dark-color);
 }
 
-.desc {
+.primary-text{
   font-size: 16px;
   line-height: 1.5;
+  
   color: var(--main-text-color);
 }
 .btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
+
   cursor: pointer;
 }
 
@@ -144,6 +153,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+
   color: var(--bg-color);
 }
 
