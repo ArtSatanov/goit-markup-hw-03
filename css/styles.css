@@ -7,6 +7,7 @@
   --light-bg-color: #f4f4fd; /* Light mode backgrounds Light mode Dialogs/alerts */
   --acccent-color: #e7e9fc; /* Accent color Hairlines Subtle backgrounds */
   --cont-width: 1158px;
+  --gap-team-card: 24px;
 }
 
 body {
@@ -271,25 +272,35 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  margin-left: calc( -1 * var(--gap-team-card));
+  margin-top: calc(-1 * var(--gap-team-card));
 }
 
 .team-item {
-  
+  flex-basis: calc(100% / 4 - var(--gap-team-card));
+  margin-left: var(--gap-team-card);
+  margin-top: var(--gap-team-card);
   background-color: var(--bg-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  padding: 32px 16px;
 }
 
 .team-img {
-  margin-bottom: 32px;
+
 }
 
 .team-subtitle {
   margin-bottom: 8px;
+  
 }
 
 .team-desc {
   text-align: center;
-  margin-bottom: 32px;
+
 }
 
 /* Footer */
