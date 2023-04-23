@@ -8,7 +8,6 @@
   --acccent-color: #e7e9fc; /* Accent color Hairlines Subtle backgrounds */
   --cont-width: 1158px;
   --gap-team-card: 24px;
-  --border-color-card-portfolio: #e7e9fc;
 }
 
 body {
@@ -132,11 +131,13 @@ img {
 }
 
 .header {
+  border-bottom: 1px solid var(--acccent-color);
 }
 
 .header-nav {
   display: flex;
   margin-right: auto;
+  align-items: center
 }
 
 .header-nav-logo {
@@ -187,7 +188,7 @@ img {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
 
   font-weight: 700;
@@ -200,8 +201,12 @@ img {
 }
 
 .hero-btn {
-  padding: 16px 32px;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
+  border: none;
   color: var(--bg-color);
   background-color: var(--primary-brand-color);
 }
@@ -217,14 +222,11 @@ img {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--gap-team-card));
-  margin-left: calc(-1 * var(--gap-team-card));
+  gap: var(--gap-team-card);
 }
 
 .features-item {
-  flex-basis: calc(100% / 4 - var(--gap-team-card));
-  margin-top: var(--gap-team-card);
-  margin-left: var(--gap-team-card);
+  flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
 }
 
 .features-subtitle {
@@ -248,14 +250,12 @@ img {
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--gap-team-card));
-  margin-top: calc(-1 * var(--gap-team-card));
+  gap: var(--gap-team-card);
+
 }
 
 .examples-item {
-  flex-basis: calc(100% / 3 - var (--gap-team-card));
-  margin-left: var(--gap-team-card);
-  margin-top: var(--gap-team-card);
+  flex-basis: calc(( 100% - 48px) / 3);
 }
 
 .examples-img {
@@ -274,14 +274,11 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--gap-team-card));
-  margin-top: calc(-1 * var(--gap-team-card));
+  gap: var(--gap-team-card);
 }
 
 .team-item {
-  flex-basis: calc(100% / 4 - var(--gap-team-card));
-  margin-left: var(--gap-team-card);
-  margin-top: var(--gap-team-card);
+  flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
   background-color: var(--bg-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -309,6 +306,8 @@ img {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-desc {
@@ -359,7 +358,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid var(--border-color-card-portfolio);
+  border: 1px solid var(--acccent-color);
 }
 
 .portfolio-link {
